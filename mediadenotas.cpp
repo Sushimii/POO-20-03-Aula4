@@ -4,7 +4,12 @@
 using namespace std;
 
 int main() {
+
+    //Declaração de variavel do tipo caracter
+    char cont ;
     
+    //Primeira parte da condição faça enquanto
+    do {
     //Declaração de váriaveis no formato double por não serem números inteiros
     double nota1, nota2, nota3, nota4;
     //Tela para o usuario declarar um valor para variavel "nota1"
@@ -39,6 +44,13 @@ int main() {
         //Tela caso a variavel "soma" tenha valor menor que 7
         cout << "Eita! Voce foi reprovado!" << endl;
     }
+    //Tela mostrandoa  mensagem se o usuario deseja continuar o valor digitado será atribuido a variavel "cont"
+    cout << "Deseja continuar ? (S/N): ";
+    //Valor sendo atribuido a variavel "cont"
+    cin >>cont;
+    
+    //Segunda parte da condição faça enquanto , a condição é a variavel "cont" ter valor de 's' ou 'S'
+    }while(cont == 's' || cont == 'S');
 
 
     return 0;
